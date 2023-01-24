@@ -2,3 +2,102 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
+:root,
+[data-theme="light"] {
+    --head-color: #0d369f;
+    --bg-color: white;
+    --logo-color: #0d369e;
+    --text: #808080;
+    --bs-blue: #3053ad;
+
+}
+
+
+[data-theme="dark"] {
+    --head-color: #4867b0;
+    --bg-color: #161c2d;
+    --logo-color: #0d369e;
+    --text: white;
+    --bg-body: #121725;
+}
+
+.top-header {
+    background: var(--head-color);
+    padding: 15px 15px;
+}
+
+.top-header ul {
+    margin: 0;
+    padding: 0;
+}
+
+.top-header li {
+    list-style: none;
+
+}
+
+.top-header-left li i {
+    margin-left: 45px;
+    margin-right: 5px;
+    color: white;
+    font-size: 15px;
+}
+
+.top-header-right a {
+    margin-left: 30px;
+}
+
+.top-header li a {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 400;
+    transition: all 0.3s;
+}
+
+.top-header li a:hover {
+    color: #ff8981;
+}
+
+.navbar .navbar-brand {
+    color: #3053ad;
+    transition: all 0.3s;
+}
+
+.navbar .navbar-brand:hover {
+    color: #ff8981;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.form-control {
+    padding: 10px 5px;
+    border-radius: 50px;
+}
+
+.navbar .sreach .btn {
+    right: 10px;
+    top: 5px;
+    color: #0d369e;
+    transition: all 0.3s;
+}
+
+.navbar .sreach .btn:hover {
+    color: #ff8981;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+    color: #ff8981;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link:hover {
+    color: #ff8981;
+}
