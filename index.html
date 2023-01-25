@@ -31,6 +31,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link href="https://css.gg/moon.css" rel="stylesheet" />
+    <link href="https://css.gg/sun.css" rel="stylesheet" />
     <link rel="stylesheet" href="./style.css" />
   </head>
 
@@ -92,8 +106,10 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand ms-3 fw-bold fs-4" href="#"
-            ><img class="me-2" src="./img/Cap01.png" alt="" />Studious</a
+          <a class="navbar-brand ms-3 fs-4" href="#"
+            ><img class="me-2" src="./img/Cap01.png" alt="" /><span class="fs-3"
+              >Studious</span
+            ></a
           >
           <div
             class="collapse navbar-collapse me-5"
@@ -101,29 +117,30 @@
           >
             <ul class="navbar-nav mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link fw-bold active" aria-current="page" href="#"
+                <a class="nav-link me-3 active" aria-current="page" href="#"
                   >HOME</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-bold" href="#">ABOUT US</a>
+                <a class="nav-link me-3" href="#">ABOUT US</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-bold" href="#">COURSES</a>
+                <a class="nav-link me-3" href="#">COURSES</a>
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link fw-bold dropdown-toggle"
+                  class="nav-link me-3"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   PAGES
+                  <span class="fa fa-angle-down"></span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-bold" href="#">CONTACT US</a>
+                <a class="nav-link me-3" href="#">CONTACT US</a>
               </li>
             </ul>
             <form class="sreach d-flex position-relative" role="search">
@@ -138,9 +155,93 @@
               </button>
             </form>
           </div>
+          <div class="switch-mode position-relative">
+            <button
+              id="sun"
+              class="sun position-absolute"
+              onclick="swItchLight()"
+            >
+              <i class="gg-sun"></i>
+            </button>
+            <button
+              id="moon"
+              class="moon position-absolute"
+              onclick="swItchDark()"
+            >
+              <i class="gg-moon"></i>
+            </button>
+          </div>
         </div>
       </nav>
     </header>
+    <section class="carousel">
+      <div class="carousel-inner">
+        <div class="owl-carousel owlCarousel">
+          <div class="carousel-item active">
+            <h2 class="d-block" alt="First slide"></h2>
+            <div class="text">
+              <div class="container">
+                <h1>Master the Skills to Drive your Career</h1>
+                <a class="read mt-sm-5 mt-4" href="">
+                  Know More
+                  <i class="fa fa-arrow-right ml-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item active">
+            <h3 class="d-block" alt="Second slide"></h3>
+            <div class="text">
+              <div class="container">
+                <h1>Studious is the best choice for everyone</h1>
+                <a class="read mt-sm-5 mt-4" href="">
+                  Know More
+                  <i class="fa fa-arrow-right ml-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="carousel-bottom d-grid pb-lg-5 text-center">
+      <div class="container">
+        <div class="box grids row">
+          <div class="box-color1 col-lg-3 col-md-6 px-lg-2">
+            <div class="box-carousel">
+              <i class="fa fa-cogs"></i>
+              <h1>
+                <a href="" class="title-box">Engineering & Architecture</a>
+              </h1>
+            </div>
+          </div>
+          <div class="box-color2 col-lg-3 col-md-6 px-lg-2 mt-md-0 mt-3">
+            <div class="box-carousel">
+              <i class="fa fa-book"></i>
+              <h1>
+                <a href="" class="title-box">Learning Management</a>
+              </h1>
+            </div>
+          </div>
+          <div class="box-color3 col-lg-3 col-md-6 px-lg-2 mt-lg-0 mt-3">
+            <div class="box-carousel">
+              <i class="fa fa-coffee"></i>
+              <h1>
+                <a href="" class="title-box">Business & Management</a>
+              </h1>
+            </div>
+          </div>
+          <div class="box-color4 col-lg-3 col-md-6 px-lg-2 mt-lg-0 mt-3">
+            <div class="box-carousel">
+              <i class="fa fa-hourglass-half"></i>
+              <h1>
+                <a href="" class="title-box">Artificial Intelligence</a>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -153,5 +254,35 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: false,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        margin: 0,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 1,
+          },
+        },
+      });
+    </script>
+    <script src="./index.js"></script>
   </body>
 </html>
