@@ -3,6 +3,14 @@
     font-family: 'Roboto', sans-serif;
 }
 
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 :root,
 [data-theme="light"] {
     --head-color: #0d369f;
@@ -334,4 +342,226 @@
     font-size: 45px;
     margin-bottom: 35px;
     margin-top: 25px;
+}
+
+.feature {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.feature .title-head {
+    max-width: 650px;
+    position: relative;
+}
+
+
+
+.title-head span {
+    color: #ff6e65;
+}
+
+h1 .title-head::before {
+    left: -20px;
+    bottom: -8px;
+}
+
+.title-head h1::before {
+    content: "";
+    background: var(--text);
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    right: 45%;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+h1 .title-head::after {
+    left: -20px;
+    bottom: -8px;
+}
+
+.title-head h1::after {
+    content: "";
+    background: var(--text);
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    right: 48%;
+    top: 70px;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+.title-body {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature-content {
+    width: 33%;
+}
+
+.feature-content .feature-icon i {
+    font-size: 30px;
+    color: #0d369f;
+    width: 60px;
+    height: 60px;
+    background-color: #e9edf6;
+    border-radius: 50%;
+    text-align: center;
+    margin-bottom: 15px;
+    line-height: 2;
+}
+
+.feature-text h1 {
+    font-size: 24px;
+    line-height: 2;
+    font-weight: 500;
+    color: #121725;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.feature-text h1:hover {
+    color: #ff4f81;
+}
+
+.feature-text p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 28px;
+    color: #b0b0b0;
+    letter-spacing: 1.5px;
+}
+
+.course {
+    background-color: #f8f9ff;
+}
+
+.course .title-head {
+    max-width: 650px;
+    position: relative;
+    margin: 0 30%;
+}
+
+
+
+.title-head span {
+    color: #ff6e65;
+}
+
+h1 .title-head::before {
+    left: -20px;
+    bottom: -8px;
+}
+
+.title-head h1::before {
+    content: "";
+    background: var(--text);
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    right: 45%;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+h1 .title-head::after {
+    left: -20px;
+    bottom: -8px;
+}
+
+.title-head h1::after {
+    content: "";
+    background: var(--text);
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    right: 48%;
+    top: 70px;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+.course-body {
+    width: 33.33333%;
+}
+
+.head-card img {
+    display: block;
+    height: auto;
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.meta-list {
+    position: absolute;
+    left: 30px;
+    top: 15px;
+}
+
+.meta-list a {
+    background-color: #1DC295;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 10px;
+    color: white;
+    margin-right: 5px;
+}
+
+.meta-list a:nth-child(1) {
+    background-color: #ffa100;
+}
+
+.course-price {
+    position: absolute;
+    right: 30px;
+    bottom: -25px;
+}
+
+.course-price h2 {
+    border-radius: 100px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #ff6e65;
+    color: white;
+    box-shadow: 0px 8px 20px rgb(241 77 93 / 20%);
+    min-width: 70px;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot-top ul {
+    margin-top: 35px;
+}
+
+.foot-card {
+    padding: 20px;
+    border: 1px solid white;
+    border-top: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background: var(--bg-color);
+}
+
+.foot-card a {
+    color: black;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.foot-card p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 28px;
+    color: #b0b0b0;
+    letter-spacing: 1.5px;
 }
