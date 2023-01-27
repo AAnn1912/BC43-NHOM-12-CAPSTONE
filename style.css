@@ -105,7 +105,7 @@ a {
     flex-direction: column;
     align-items: end;
     position: absolute;
-    bottom: 100px;
+    bottom: 70px;
     gap: 10px;
     right: 20px;
     z-index: 10;
@@ -269,11 +269,11 @@ a {
     margin-top: -5%;
     position: relative;
     z-index: 2;
-    margin-left: 15%;
 }
 
 .box {
     gap: 25px;
+    justify-content: center;
     flex-wrap: nowrap;
 }
 
@@ -575,6 +575,11 @@ h1 .title-head::after {
     color: black;
     font-weight: 400;
     font-size: 22px;
+    transition: all 0.3s;
+}
+
+.foot-card a:hover {
+    color: #ff6e65;
 }
 
 .foot-card p {
@@ -632,6 +637,7 @@ h1 .title-head::after {
 
 .content-service {
     display: flex;
+    padding: 45px 0;
 }
 
 .content-service .space {
@@ -686,4 +692,76 @@ h1 .title-head::after {
     letter-spacing: 1.5px;
     padding-right: 15px;
 
+}
+
+@media screen and (min-width: 768px) and (max-width:992px) {
+    .container {
+        width: 768px;
+        margin: auto;
+    }
+
+    .carousel-item .text h1 {
+        margin-top: 30%;
+        font-size: 40px;
+    }
+
+    .box-carousel i {
+        font-size: 30px;
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+
+    .box-carousel {
+        padding: 0;
+    }
+
+    .box-color1,
+    .box-color2,
+    .box-color3,
+    .box-color4 {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        padding: 15px 0px;
+        border-radius: 15px;
+        width: 22%;
+    }
+
+    .course .title-head {
+        margin: 0 15%;
+    }
+
+    .title-head h1::before {
+        bottom: 15px;
+    }
+
+    .title-content h1 {
+        margin-left: 15px;
+    }
+
+    .feature-text p {
+        margin: 10px;
+        padding: 0;
+        font-size: 15px;
+        line-height: 25px;
+        color: #b0b0b0;
+        letter-spacing: 0.5px;
+    }
+
+    .feature-text h1 {
+        font-size: 20px;
+    }
+
+    .foot-card {
+        padding: 5px;
+    }
+
+    .course-price {
+        right: 10px;
+        bottom: -40px;
+    }
+
+    .content-service .services-box {
+        width: 500%;
+    }
 }
