@@ -272,9 +272,11 @@ a {
 }
 
 .box {
-    gap: 25px;
+    /* gap: 25px; */
     justify-content: center;
     flex-wrap: nowrap;
+    width: 80%;
+    margin: auto;
 }
 
 
@@ -287,7 +289,7 @@ a {
     left: 0;
     padding: 25px 30px;
     border-radius: 15px;
-    width: 20%;
+    /* width: 20%; */
 }
 
 .box-color1,
@@ -696,7 +698,7 @@ h1 .title-head::after {
 
 @media screen and (min-width: 768px) and (max-width:992px) {
     .container {
-        width: 768px;
+        /* width: 768px; */
         margin: auto;
     }
 
@@ -724,7 +726,7 @@ h1 .title-head::after {
         left: 0;
         padding: 15px 0px;
         border-radius: 15px;
-        width: 22%;
+        /* width: 22%; */
     }
 
     .course .title-head {
@@ -763,5 +765,57 @@ h1 .title-head::after {
 
     .content-service .services-box {
         width: 500%;
+    }
+
+
+
+}
+
+/* button.navbar-toggler .icon-expand {
+    display: block;
+} */
+
+
+@media screen and (max-width: 576px) {
+    .top-header {
+        display: none;
+    }
+
+    .box {
+        flex-direction: column;
+
+    }
+
+    .row>* {
+        width: 100%;
+    }
+
+    .title-head h1::before {
+        bottom: -20px;
+        right: 40%;
+    }
+
+    .title-head h1::after {
+        top: 65px;
+        right: 45%;
+    }
+
+    .title-body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-content {
+        width: 75%;
+        margin-top: 25px;
+    }
+
+    .course .title-head {
+        margin: 0;
+    }
+
+    .content-service .services-box {
+        width: 500%;
+
     }
 }
