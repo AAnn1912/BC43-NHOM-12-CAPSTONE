@@ -806,6 +806,7 @@ h1 .title-head::after {
 
     .row>* {
         width: 100%;
+        margin-bottom: 15px;
     }
 
     .title-head h1::before {
