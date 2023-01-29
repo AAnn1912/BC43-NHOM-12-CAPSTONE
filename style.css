@@ -465,8 +465,3 @@ a.btn-style-secondary:hover{
         line-height: 45px;
     }
 }
-  @media (min-width: 992px) {
-    .pl-lg-5{
-        padding-left: 3rem !important;
-    }
-  }
