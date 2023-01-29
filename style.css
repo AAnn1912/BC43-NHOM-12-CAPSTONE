@@ -274,24 +274,31 @@ a {
 .box {
     /* gap: 25px; */
     justify-content: center;
-    flex-wrap: nowrap;
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 
+.box-container {
+    padding: 0 4px;
+}
 
-.box-color1,
-.box-color2,
-.box-color3,
-.box-color4 {
+.box-carousel {
+    height: 221px;
+}
+
+
+.box-color1 .box-carousel,
+.box-color2 .box-carousel,
+.box-color3 .box-carousel,
+.box-color4 .box-carousel {
     position: relative;
     bottom: 0;
     left: 0;
     padding: 25px 30px;
     border-radius: 15px;
-    margin-right: 15px;
-    /* width: 20%; */
 }
+
+
 
 .box-color1,
 .box-color2,
@@ -331,25 +338,25 @@ a {
     color: black;
 }
 
-.box-color1 {
+.box-color1 .box-carousel {
     background-color: #037ef3;
 }
 
-.box-color2 {
+.box-color2 .box-carousel {
     background-color: #ffc949;
 }
 
-.box-color3 {
+.box-color3 .box-carousel {
     background-color: #ff4f81;
 }
 
-.box-color4 {
+.box-color4 .box-carousel {
     background-color: #1ee697;
 }
 
-.box-carousel {
+/* .box-carousel {
     padding: 5px 20px;
-}
+} */
 
 .box-carousel i {
     font-size: 45px;
@@ -456,7 +463,8 @@ h1 .title-head::after {
 .course .title-head {
     max-width: 650px;
     position: relative;
-    margin: 0 30%;
+    margin-left: 30%;
+    text-align: center;
 }
 
 
@@ -698,9 +706,14 @@ h1 .title-head::after {
 }
 
 @media screen and (min-width: 768px) and (max-width:992px) {
+
     /* .container {
         /* width: 768px; */
     /* margin: auto; */
+    .row>* {
+        width: 100%;
+        margin-bottom: 15px;
+    }
 
 
     .carousel-item .text h1 {
@@ -757,6 +770,7 @@ h1 .title-head::after {
 
     .title-content h1 {
         margin-left: 15px;
+        text-align: center;
     }
 
     .title-content {
@@ -798,7 +812,7 @@ h1 .title-head::after {
 } */
 
 
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 576px) and (max-width:768px) {
     .top-header {
         display: none;
     }
@@ -850,4 +864,61 @@ h1 .title-head::after {
         width: 500%;
 
     }
+
+
+}
+
+@media screen and (max-width:576px) {
+    .top-header {
+        display: none;
+    }
+
+    .carousel-item .text h1 {
+        font-size: 28px;
+        margin-top: 55%;
+    }
+
+    .box {
+        flex-direction: column;
+
+    }
+
+    .row>* {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .title-head h1::before {
+        bottom: -20px;
+        right: 40%;
+    }
+
+    .title-head h1::after {
+        top: 65px;
+        right: 45%;
+    }
+
+    .title-content {
+        text-align: center;
+    }
+
+    .title-body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-content {
+        width: 75%;
+        margin-top: 25px;
+    }
+
+    .course .title-head {
+        margin: 0;
+    }
+
+    .content-service .services-box {
+        width: 500%;
+
+    }
+
 }
