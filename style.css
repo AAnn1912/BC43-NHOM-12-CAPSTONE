@@ -30,6 +30,8 @@ h1,h2,h3,h4,h5,h6{
 }
 p{
     color: var(--font-color);
+    margin: 0;
+    padding: 0;
 }
 ul li{
     list-style-type: none;
@@ -38,9 +40,9 @@ ul li{
     max-width: 1200px;
 }
 .right-sidebar{
-    width: 7%;
+    width: 6%;
     position: fixed;
-    top: 40%;
+    top: 10%;
     right: 0;
     z-index: 100;
     transition: all .5s ease-in-out;
@@ -54,6 +56,49 @@ ul li{
     border-top-left-radius: 9px;
     border-bottom-left-radius: 9px;
 }
+.demo-btns{
+    border-top: 1px solid #41414d;
+    padding-top: 30px;
+}
+.demo-btns a{
+    overflow:hidden;
+    display: block; 
+    color: #e6ebff;
+    text-decoration: none;
+    line-height: 24px;
+    opacity: .6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.demo-btns a span{
+    display: block;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* BACK TO TOP */
+#button{
+    position: fixed;
+    bottom: 90px;
+    right: 15px;
+    z-index: 9;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    border-radius: 4px;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+#button.show {
+    opacity: 1;
+    visibility: visible;
+  }
 
 /* STATS */
 h3.text_title_h3{
@@ -365,6 +410,16 @@ a.btn-style-secondary:hover{
 .footer ul.social li a span {
     font-size: 15px;
     line-height: 35px;
+    margin: 0;
+}
+.footer .copyright p{
+    color: #a0a0a0;
+}
+.copyright{
+    background-color: #040a17;
+}
+.copyright span{
+    margin:0;
 }
   @media (min-width: 992px) {
     .pl-lg-5{
