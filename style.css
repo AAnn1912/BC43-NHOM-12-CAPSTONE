@@ -799,6 +799,11 @@ h1 .title-head::after {
         display: none;
     }
 
+    .carousel-item .text h1 {
+        font-size: 28px;
+        margin-top: 55%;
+    }
+
     .box {
         flex-direction: column;
 
@@ -817,6 +822,10 @@ h1 .title-head::after {
     .title-head h1::after {
         top: 65px;
         right: 45%;
+    }
+
+    .title-content {
+        text-align: center;
     }
 
     .title-body {
