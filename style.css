@@ -708,7 +708,7 @@ h1 .title-head::after {
         font-size: 40px;
     }
 
-    * .box-carousel i {
+    .box-carousel i {
         font-size: 30px;
         margin-bottom: 30px;
         margin-top: 10px;
