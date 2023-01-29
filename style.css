@@ -759,6 +759,10 @@ h1 .title-head::after {
         margin-left: 15px;
     }
 
+    .title-content {
+        text-align: center;
+    }
+
     .feature-text p {
         margin: 10px;
         padding: 0;
