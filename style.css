@@ -703,12 +703,12 @@ h1 .title-head::after {
     /* margin: auto; */
 
 
-    */ .carousel-item .text h1 {
+    .carousel-item .text h1 {
         margin-top: 30%;
         font-size: 40px;
     }
 
-    .box-carousel i {
+    * .box-carousel i {
         font-size: 30px;
         margin-bottom: 30px;
         margin-top: 10px;
