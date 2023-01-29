@@ -18,7 +18,7 @@ a {
     --logo-color: #0d369e;
     --text: black;
     --bs-blue: #3053ad;
-
+    --bg-body: white;
 }
 
 
@@ -66,6 +66,10 @@ a {
 
 .top-header li a:hover {
     color: #ff8981;
+}
+
+header {
+    background-color: var(--bg-body);
 }
 
 .nav-fixed {
