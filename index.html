@@ -160,27 +160,26 @@
             <div>
               <label
                 for="checkbox"
-                class="theme-switch position-fixed bottom-0 left-0 bg-primary text-white fw-bolder rounded-3 px-5 py-4 m-4"
+                class="theme-switch"
                 style="cursor: pointer"
               >
-                <span>THEME</span>
+                <span
+                  id="sun"
+                  class="sun position-absolute"
+                  onclick="swItchLight()"
+                >
+                  <i class="gg-sun"></i>
+                </span>
+                <span
+                  id="moon"
+                  class="moon position-absolute"
+                  onclick="swItchDark()"
+                >
+                  <i class="gg-moon"></i
+                ></span>
                 <input type="checkbox" id="checkbox" class="d-none" />
               </label>
             </div>
-            <button
-              id="sun"
-              class="sun position-absolute"
-              onclick="swItchLight()"
-            >
-              <i class="gg-sun"></i>
-            </button>
-            <button
-              id="moon"
-              class="moon position-absolute"
-              onclick="swItchDark()"
-            >
-              <i class="gg-moon"></i>
-            </button>
           </div>
         </div>
       </nav>
@@ -214,43 +213,43 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="carousel-bottom pb-lg-5 text-center">
-      <div class="container">
-        <div class="box row">
-          <div class="box-color1 col-12 col-sm-12 col-md-6 col-lg-3 px-2">
-            <div class="box-carousel">
-              <i class="fa fa-cogs"></i>
-              <h1>
-                <a href="" class="title-box">Engineering & Architecture</a>
-              </h1>
+      <div class="carousel-bottom pb-lg-5 text-center">
+        <div class="container">
+          <div class="box row">
+            <div class="box-color1 col-12 col-sm-12 col-md-6 col-lg-3 px-2">
+              <div class="box-carousel">
+                <i class="fa fa-cogs"></i>
+                <h1>
+                  <a href="" class="title-box">Engineering & Architecture</a>
+                </h1>
+              </div>
             </div>
-          </div>
 
-          <div class="box-color2 col-12 col-sm-12 col-md-6 col-lg-3 px-2">
-            <div class="box-carousel">
-              <i class="fa fa-book"></i>
-              <h1>
-                <a href="" class="title-box">Learning Management</a>
-              </h1>
+            <div class="box-color2 col-12 col-sm-12 col-md-6 col-lg-3 px-2">
+              <div class="box-carousel">
+                <i class="fa fa-book"></i>
+                <h1>
+                  <a href="" class="title-box">Learning Management</a>
+                </h1>
+              </div>
             </div>
-          </div>
 
-          <div class="box-color3 col-12 col-sm-12 col-md-6 col-lg-3 px-2">
-            <div class="box-carousel">
-              <i class="fa fa-coffee"></i>
-              <h1>
-                <a href="" class="title-box">Business & Management</a>
-              </h1>
+            <div class="box-color3 col-12 col-sm-12 col-md-6 col-lg-3 px-2">
+              <div class="box-carousel">
+                <i class="fa fa-coffee"></i>
+                <h1>
+                  <a href="" class="title-box">Business & Management</a>
+                </h1>
+              </div>
             </div>
-          </div>
 
-          <div class="box-color4 col-12 col-sm-12 col-md-6 col-lg-3 px-2">
-            <div class="box-carousel">
-              <i class="fa fa-hourglass-half"></i>
-              <h1>
-                <a href="" class="title-box">Artificial Intelligence</a>
-              </h1>
+            <div class="box-color4 col-12 col-sm-12 col-md-6 col-lg-3 px-2">
+              <div class="box-carousel">
+                <i class="fa fa-hourglass-half"></i>
+                <h1>
+                  <a href="" class="title-box">Artificial Intelligence</a>
+                </h1>
+              </div>
             </div>
           </div>
         </div>

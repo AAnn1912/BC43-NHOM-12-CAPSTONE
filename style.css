@@ -19,16 +19,29 @@ a {
     --text: black;
     --bs-blue: #3053ad;
     --bg-body: white;
+    --bg-form: white;
+    --bg-carousel: white;
+    --fe-logo: #e9edf6;
+    --bg-cou: #f8f9ff;
 }
 
 
 [data-theme="dark"] {
     --head-color: #4867b0;
     --bg-color: #161c2d;
-    --logo-color: #0d369e;
+    --logo-color: white;
     --text: white;
     --bg-body: #121725;
+    --bg-form: #161c2d;
+    --bg-carousel: #161c2d;
+    --fe-logo: #272c3e;
+    --bg-cou: #161c2d;
 }
+
+body {
+    background-color: var(--bg-carousel);
+}
+
 
 .top-header {
     background: var(--head-color);
@@ -48,7 +61,7 @@ a {
 .top-header-left li i {
     margin-left: 45px;
     margin-right: 5px;
-    color: var(--bg-color);
+    color: white;
     font-size: 15px;
 }
 
@@ -56,8 +69,13 @@ a {
     margin-left: 30px;
 }
 
+.carousel {
+    background-color: var(--bg-carousel);
+
+}
+
 .top-header li a {
-    color: var(--bg-color);
+    color: white;
     font-size: 15px;
     text-decoration: none;
     font-weight: 400;
@@ -68,14 +86,13 @@ a {
     color: #ff8981;
 }
 
-header {
+.navbar {
     background-color: var(--bg-body);
 }
 
 .nav-fixed {
     position: fixed;
     width: 100%;
-    background-color: white;
     top: 0;
     left: 0;
     z-index: 5;
@@ -130,12 +147,13 @@ header {
 .form-control {
     padding: 10px 5px;
     border-radius: 50px;
+    background-color: var(--bg-form);
 }
 
 .navbar .sreach .btn {
     right: 10px;
     top: 5px;
-    color: var(--logo-color);
+    color: var(--head-color);
     transition: all 0.3s;
 }
 
@@ -371,11 +389,13 @@ header {
 .feature {
     margin-top: 5%;
     margin-bottom: 5%;
+    background-color: var(--bg-carousel);
 }
 
 .feature .title-head {
     max-width: 650px;
     position: relative;
+    color: var(--text);
 }
 
 
@@ -428,10 +448,10 @@ h1 .title-head::after {
 
 .feature-content .feature-icon i {
     font-size: 30px;
-    color: #0d369f;
+    color: var(--head-color);
     width: 60px;
     height: 60px;
-    background-color: #e9edf6;
+    background-color: var(--fe-logo);
     border-radius: 50%;
     text-align: center;
     margin-bottom: 15px;
@@ -442,7 +462,7 @@ h1 .title-head::after {
     font-size: 24px;
     line-height: 2;
     font-weight: 500;
-    color: #121725;
+    color: var(--text);
     cursor: pointer;
     transition: all 0.3s;
 }
@@ -461,7 +481,11 @@ h1 .title-head::after {
 }
 
 .course {
-    background-color: #f8f9ff;
+    background-color: var(--bg-cou);
+}
+
+.course-title {
+    color: var(--text);
 }
 
 .course .title-head {
@@ -563,6 +587,10 @@ h1 .title-head::after {
     justify-content: center;
 }
 
+.foot-top .list-unstyled li {
+    color: var(--text);
+}
+
 .foot-top ul {
     margin-top: 35px;
 }
@@ -587,7 +615,7 @@ h1 .title-head::after {
 }
 
 .foot-card a {
-    color: black;
+    color: var(--text);
     font-weight: 400;
     font-size: 22px;
     transition: all 0.3s;
@@ -664,7 +692,7 @@ h1 .title-head::after {
 }
 
 .box-item .service-item {
-    background-color: white;
+    background-color: var(--bg-carousel);
     display: flex;
     margin-top: 15px;
     border-radius: 15px;
@@ -696,6 +724,7 @@ h1 .title-head::after {
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 5px;
+    color: var(--text);
 }
 
 .service-item .icon-info p {
@@ -779,6 +808,7 @@ h1 .title-head::after {
 
     .title-content {
         text-align: center;
+
     }
 
     .feature-text p {
