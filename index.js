@@ -1,8 +1,8 @@
 var sunHide = document.getElementById("sun");
 var moonHide = document.getElementById("moon");
 
-moonHide.className = "moon";
-sunHide.className = "sun-hide";
+moonHide.className = "sun";
+sunHide.className = "moon-hide";
 
 function swItchDark() {
   moonHide.className = "moon-hide";
