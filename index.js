@@ -23,7 +23,7 @@ window.onscroll = function () {
   }
 };
 
-//  CHANGE THEME
+//  CHANGE THEME MODE
 
 const toggleSwitch = document.querySelector(
   '.theme-switch input[type="checkbox"]'
