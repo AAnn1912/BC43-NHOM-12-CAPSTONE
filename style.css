@@ -126,8 +126,37 @@ ul li {
     font-size: 15px;
 }
 
+
 .top-header-right a {
     margin-left: 30px;
+}
+
+.dropdown-menu {
+    background-color: var(--bg-cou);
+}
+
+.dropdown-item {
+    background-color: var(--bg-cou);
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+    background-color: var(--bg-cou);
+    color: var(--secondary-color);
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: var(--secondary-color);
+}
+
+.dropdown-menu li a {
+    color: var(--text);
+    transition: color 0.5;
+}
+
+.dropdown-menu li a:hover {
+    color: #ff6e65;
 }
 
 .carousel {
@@ -157,6 +186,11 @@ ul li {
     top: 0;
     left: 0;
     z-index: 5;
+}
+
+.navbar-toggler {
+    background-color: var(--head-color);
+
 }
 
 .navbar .navbar-brand {
