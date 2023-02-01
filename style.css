@@ -736,7 +736,10 @@ h1 .title-head::after {
     padding: 0;
     background: transparent;
     font-size: 14px;
+}
 
+.foot-rate .btn:hover {
+    color: #037ef3;
 }
 
 .foot-rate .course-footer {
