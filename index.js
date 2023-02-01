@@ -23,7 +23,7 @@ window.onscroll = function () {
   }
 };
 
-//  CHANGE THEME MODE DARK LIGHT
+//  CHANGE THEME MODE DARK-LIGHT
 
 const toggleSwitch = document.querySelector(
   '.theme-switch input[type="checkbox"]'
